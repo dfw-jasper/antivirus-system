@@ -1,0 +1,52 @@
+{
+  "file_path": "suspicious_test.exe",
+  "file_size": 1325,
+  "analysis_time": "2025-09-06T02:21:12.787519",
+  "heuristic": {
+    "suspicious_patterns": [
+      "registry_manipulation: 1 matches",
+      "process_manipulation: 3 matches"
+    ],
+    "malware_indicators": [
+      "backdoor",
+      "keylogger"
+    ],
+    "entropy": 7.213199529730797,
+    "risk_score": 70
+  },
+  "behavioral": {
+    "file_operations": [
+      "Suspicious extension: .exe",
+      "Unusually small executable"
+    ],
+    "network_indicators": [],
+    "persistence_mechanisms": [],
+    "risk_score": 45
+  },
+  "static": {
+    "pe_analysis": {
+      "has_dos_header": true
+    },
+    "imports": [
+      "VirtualAlloc",
+      "WriteProcessMemory",
+      "CreateRemoteThread"
+    ],
+    "sections": [],
+    "risk_score": 60
+  },
+  "ml_detection": {
+    "features": {
+      "file_size": 1325,
+      "entropy": 7.213199529730797,
+      "null_byte_ratio": 0.14641509433962263,
+      "printable_ratio": 0.36754716981132074,
+      "unique_bytes": 248,
+      "compression_ratio": 5.321285140562249
+    },
+    "ml_score": 30,
+    "classification": "clean"
+  },
+  "total_risk_score": 205,
+  "final_classification": "high_risk"
+}

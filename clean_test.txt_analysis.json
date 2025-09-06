@@ -1,0 +1,37 @@
+{
+  "file_path": "clean_test.txt",
+  "file_size": 2350,
+  "analysis_time": "2025-09-06T02:21:12.790875",
+  "heuristic": {
+    "suspicious_patterns": [],
+    "malware_indicators": [],
+    "entropy": 3.913750224469897,
+    "risk_score": 0
+  },
+  "behavioral": {
+    "file_operations": [],
+    "network_indicators": [],
+    "persistence_mechanisms": [],
+    "risk_score": 0
+  },
+  "static": {
+    "pe_analysis": {},
+    "imports": [],
+    "sections": [],
+    "risk_score": 0
+  },
+  "ml_detection": {
+    "features": {
+      "file_size": 2350,
+      "entropy": 3.913750224469897,
+      "null_byte_ratio": 0.0,
+      "printable_ratio": 0.9787234042553191,
+      "unique_bytes": 19,
+      "compression_ratio": 117.5
+    },
+    "ml_score": 45,
+    "classification": "suspicious"
+  },
+  "total_risk_score": 45,
+  "final_classification": "low_risk"
+}
